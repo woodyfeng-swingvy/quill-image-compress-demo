@@ -6,6 +6,8 @@ import ImageCompress from "quill-image-compress";
 const moduleName = "modules/imageCompress";
 Quill.register(moduleName, ImageCompress, true);
 
+console.log("hello");
+
 const calc = (quill) => JSON.stringify(quill.getContents()).length;
 
 const createDemo = (mode, modules) => () => {
